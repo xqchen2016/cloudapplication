@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+<meta charset="UTF-8">
+    <title>BOS FTP</title>
+    <link href="css/bootstrap.min.css" type="text/css" rel="Stylesheet"/>
+    <link href="css/bootstrap-theme.min.css" type="text/css" rel="Stylesheet"/>
+    <link href="css/site.css" type="text/css" rel="Stylesheet"/>
+</head>
+<body>
+ <div id="header" class="page-center">
+    <h2>BOS FTP </h2>
+    <div class="userinfo">
+	<span class="user-name"></span>
+	<a href="#" class="logoff">Exit</a>
+	<form action="FileUploadServlet" method="post" enctype="multipart/form-data">
+	<label>Choose File:</label>
+	<form action="servlets/FileUploadseverlet" method="post">
+   <input type="file" name="File1">
+	<input type="submit" value="Upload">
+	</input>
+		</input>
+	</form>
+    </div>
+ </div>
+ 
+ <div id="pbody" class="page-center">
+    <h3>File List</h3>
+     <table id="filelist" class="table table-bordered">
+         <tr><th>FileName</th><th>Operation</th></tr>
+     </table>
+ </div>
+
+
+
+  <script type="text/javascript" src="js/jquery-1.7.1.min.js" ></script>
+  <script type="text/javascript" src="js/bootstrap.min.js" ></script>
+  <script type="text/javascript" src="js/site.js" charset="utf-8"></script>
+</body>
+</html>
